@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    
+    background-image: url("images/ISO26262_background2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#page-header {
+    background: linear-gradient(135deg, #0077cc, #d400ff);
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 1000px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#chat-container {
+    width: 1000px;
+    height: 1123px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#chat {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+#input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #eee;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+#message {
+    flex-grow: 1;
+    resize: vertical;
+    min-height: 40px;
+    max-height: 120px;
+    font-size: 16px;
+    padding: 10px;
+    line-height: 1.4;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#send {
+    padding: 10px 20px;
+    font-size: 16px;
+    height: 67px;
+    align-self: flex-end;
+}
+
+.message {
+    margin: 5px 0;
+    max-width: 66%;
+    padding: 8px 12px;
+    border-radius: 12px;
+    display: inline-block;
+    clear: both;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.user {
+    background-color: #eeececd8;
+    color: #000;
+    float: left;
+    text-align: left;
+    border-top-left-radius: 0;
+}
+
+.bot {
+    background-color: #d4f6f8;
+    color: #000;
+    float: right;
+    text-align: left;
+    border-top-right-radius: 0;
+}
+
+.bot-header {
+    background-color: white;
+}
