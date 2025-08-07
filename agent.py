@@ -1,6 +1,6 @@
 from google import genai
 from google.genai import types
-from vector import retriever
+from embeddingRetriever import retriever
 from dotenv import load_dotenv
 import os
 
@@ -79,4 +79,5 @@ class Iso26262Chatbot:
 
     return response.text
   
+
 
