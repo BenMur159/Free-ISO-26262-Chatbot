@@ -43,11 +43,11 @@ class Iso26262Chatbot:
   
   def _format_chunks(self, chunks_list):
     chunks_string = ""
-    file_path = "evaluation/question_4.txt"
-    with open(file_path, "w", encoding="utf-8") as f:
-      for i, chunk in enumerate(chunks_list):
-        line = f"Data_chunk_{i}=[{chunk}]\n\n\n"
-        f.write(line)
+    #file_path = "evaluation/question_4.txt"
+    #with open(file_path, "w", encoding="utf-8") as f:
+    # for i, chunk in enumerate(chunks_list):
+    #    line = f"Data_chunk_{i}=[{chunk}]\n\n\n"
+    #    f.write(line)
   
     for i, chunk in enumerate(chunks_list):
       chunks_string += f"Data_chunk_{i}=[{chunk}]\n"
@@ -79,3 +79,4 @@ class Iso26262Chatbot:
 
     return response.text
   
+
