@@ -22,4 +22,5 @@ def open_browser():
 
 if __name__ == "__main__":
   threading.Timer(1.25, open_browser).start()  # Open browser shortly after server starts
-  app.run(debug=True)
+
+  app.run(debug=False)
