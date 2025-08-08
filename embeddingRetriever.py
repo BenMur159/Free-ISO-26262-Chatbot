@@ -1,9 +1,11 @@
+# This python file is based on "https://github.com/techwithtim/LocalAIAgentWithRAG/blob/main/vector.py"
+
 from langchain_ollama import OllamaEmbeddings
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import os
-import pandas as pd
+# import pandas as pd
 
 
 
@@ -54,4 +56,5 @@ retriever = vector_store.as_retriever(
     #search_type="mmr",
     #search_kwargs={'k': 40, 'fetch_k': 100}
     search_kwargs={'k': 20}
+
 )
